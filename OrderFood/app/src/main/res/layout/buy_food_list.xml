@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_edit">
+        <ImageView
+
+            android:id="@+id/food_list_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/login"
+            android:layout_margin="7dp"
+            android:scaleType="centerCrop"
+            android:paddingLeft="5dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/food_list_name_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/food_list_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="麻辣烫"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/food_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格:10"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/food_list_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述:传统麻辣烫"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageButton
+                android:id="@+id/bf"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ysq" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+            <ImageView
+                android:id="@+id/business_buy_tx"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:src="@drawable/login"
+                />
+            <TextView
+                android:id="@+id/business_buy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店铺名称"
+                android:layout_marginTop="5dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                >
+                <TextView
+                    android:id="@+id/user_food_list_jianhao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/jianhao"
+                    android:padding="3dp"
+                    />
+                <TextView
+                    android:id="@+id/user_food_list_num"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="0"
+                    android:gravity="center_vertical|center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/user_food_list_jiahao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/jiahao"
+                    android:padding="3dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+

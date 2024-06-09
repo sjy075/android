@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BusinessFragementActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/bussiness_main_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_layout"
+        android:paddingTop="5dp"
+        android:background="#FEFEFE"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="-60dp"
+        >
+
+        <RadioButton
+            android:id="@+id/business_home_radio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="#9F9F9F"
+            android:layout_height="55dp"
+            android:drawableTop="@drawable/home"
+            android:text="首页"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:background="#FEFEFE"
+            />
+        <RadioButton
+            android:id="@+id/business_add_radio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="#9F9F9F"
+            android:layout_height="55dp"
+            android:drawableTop="@drawable/add"
+            android:text="添加商品"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:background="#FEFEFE"
+            />
+        <RadioButton
+            android:id="@+id/business_my_radio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="#9F9F9F"
+            android:layout_height="55dp"
+            android:drawableTop="@drawable/my"
+            android:text="我的"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:background="#FEFEFE"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

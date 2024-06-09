@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.AddGoodActivity"
+android:orientation="vertical"
+android:layout_gravity="center_horizontal|center_vertical"
+    >
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/add_business_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F24960"
+    app:title="发布商品内容"
+    app:titleTextColor="#FFFFFF"
+    app:navigationIcon="@drawable/back"
+    />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <ImageView
+            android:id="@+id/add_business_tx"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/upimg"
+            android:layout_marginTop="45dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请添加食物商品图片"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/add_business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品名字"
+            android:layout_marginTop="50dp"
+
+            />
+
+        <EditText
+            android:id="@+id/add_business_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品价格"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/add_business_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品描述"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:minLines="5"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            android:background="@android:drawable/edit_text"
+            />
+
+
+        <Button
+            android:id="@+id/add_business_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加商品"
+            android:background="#F24960"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

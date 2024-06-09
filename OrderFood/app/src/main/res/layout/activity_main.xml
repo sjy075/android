@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_marginTop="45dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订 餐 外 卖"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="让生活变简单，让美食美上家门"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/login_sj_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="商家"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/login_user_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="用户"
+            android:layout_weight="1"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="#F24960"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+    <Button
+        android:id="@+id/login_sj_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商家注册"
+        android:background="#F24960"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+    <Button
+        android:id="@+id/login_user_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户注册"
+        android:background="#F24960"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        />
+
+
+
+</LinearLayout>
